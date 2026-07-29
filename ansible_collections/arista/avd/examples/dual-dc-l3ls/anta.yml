@@ -1,0 +1,27 @@
+- name: Run ANTA
+  hosts: FABRIC
+  connection: local
+  gather_facts: false
+  vars:
+    root_dir: "{{ playbook_dir }}"
+
+  tasks:
+    - name: Run ANTA workflow
+      run_once: true
+      delegate_to: localhost
+      arista.avd.anta_workflow:
+        device_list: "{{ ansible_play_hosts }}"
+        avd_catalogs:
+          enabled: true
+          output_dir: "{{ root_dir }}/anta/avd_catalogs"
+          structured_config_dir: "{{ root_dir }}/intended/structured_configs"
+        runner:
+          timeout: 360.0
+          batch_size: 5
+        report:
+          csv_output: "{{ root_dir }}/anta/reports/anta_report.csv"
+          md_output: "{{ root_dir }}/anta/reports/anta_report.md"
+          json_output: "{{ root_dir }}/anta/reports/anta_report.json"
+          # sorting:
+          #   status_priority: ["error", "failure", "skipped", "success", "unset"]
+          #   sort_fields: ["test", "description", "custom_field"]

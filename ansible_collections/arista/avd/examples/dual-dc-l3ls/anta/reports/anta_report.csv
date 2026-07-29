@@ -1,0 +1,525 @@
+Device,Test Name,Test Status,Message(s),Test description,Test category
+dc1-leaf1a,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc1-leaf1a: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc1-leaf1a,VerifyReachability,failure,Destination 10.255.255.0 (dc1-spine1_Ethernet1) from 10.255.255.1 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.2 (dc1-spine2_Ethernet1) from 10.255.255.3 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc1-leaf1a,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53966,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-leaf1a,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-leaf1a,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:54 dc1-leaf1a NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-leaf1b,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc1-leaf1b: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc1-leaf1b,VerifyReachability,failure,Destination 10.255.255.4 (dc1-spine1_Ethernet2) from 10.255.255.5 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.6 (dc1-spine2_Ethernet2) from 10.255.255.7 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc1-leaf1b,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53966,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-leaf1b,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-leaf1b,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:54 dc1-leaf1b NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-leaf1c,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53924,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-leaf1c,VerifyInterfacesStatus,failure,Interface: Port-Channel1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-leaf1c,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:47 dc1-leaf1c NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-leaf2a,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc1-leaf2a: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc1-leaf2a,VerifyLLDPNeighbors,failure,Port: Ethernet6 Neighbor: dc2-leaf2a Neighbor Port: Ethernet6 - Wrong LLDP neighbors: dc1-leaf2a.avd.lab/Ethernet6,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-leaf2a,VerifyReachability,failure,Destination 10.255.255.8 (dc1-spine1_Ethernet3) from 10.255.255.9 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.10 (dc1-spine2_Ethernet3) from 10.255.255.11 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 172.16.100.1 (dc2-leaf2a_Ethernet6) from 172.16.100.0 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc1-leaf2a,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53966,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-leaf2a,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-leaf2a,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:54 dc1-leaf2a NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-leaf2b,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc1-leaf2b: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc1-leaf2b,VerifyLLDPNeighbors,failure,Port: Ethernet6 Neighbor: dc2-leaf2b Neighbor Port: Ethernet6 - Wrong LLDP neighbors: dc1-leaf2b.avd.lab/Ethernet6,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-leaf2b,VerifyReachability,failure,Destination 10.255.255.12 (dc1-spine1_Ethernet4) from 10.255.255.13 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.14 (dc1-spine2_Ethernet4) from 10.255.255.15 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 172.16.100.3 (dc2-leaf2b_Ethernet6) from 172.16.100.2 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc1-leaf2b,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53966,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-leaf2b,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-leaf2b,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:54 dc1-leaf2b NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-leaf2c,VerifyRunningConfigDiffs,failure,"--- flash:/startup-config
++++ system:/running-config
+@@ -51,4 +51,11 @@
+ ntp server vrf MGMT 1.pool.ntp.org
+ ntp server vrf MGMT 2.pool.ntp.org
+ !
++router multicast
++   ipv4
++      software-forwarding kernel
++   !
++   ipv6
++      software-forwarding kernel
++!
+ end
+",Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-leaf2c,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53963,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-leaf2c,VerifyInterfacesStatus,failure,Interface: Port-Channel1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-leaf2c,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:51 dc1-leaf2c NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-spine1,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc1-spine1: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc1-spine1,VerifyRunningConfigDiffs,failure,"--- flash:/startup-config
++++ system:/running-config
+@@ -53,4 +53,11 @@
+ ntp server vrf MGMT 1.pool.ntp.org
+ ntp server vrf MGMT 2.pool.ntp.org
+ !
++router multicast
++   ipv4
++      software-forwarding kernel
++   !
++   ipv6
++      software-forwarding kernel
++!
+ end
+",Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-spine1,VerifyReachability,failure,Destination 10.255.255.1 (dc1-leaf1a_Ethernet1) from 10.255.255.0 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.5 (dc1-leaf1b_Ethernet1) from 10.255.255.4 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.9 (dc1-leaf2a_Ethernet1) from 10.255.255.8 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.13 (dc1-leaf2b_Ethernet1) from 10.255.255.12 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc1-spine1,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53923,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-spine1,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-spine1,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:45 dc1-spine1 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-spine2,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc1-spine2: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc1-spine2,VerifyReachability,failure,Destination 10.255.255.3 (dc1-leaf1a_Ethernet2) from 10.255.255.2 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.7 (dc1-leaf1b_Ethernet2) from 10.255.255.6 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.11 (dc1-leaf2a_Ethernet2) from 10.255.255.10 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.15 (dc1-leaf2b_Ethernet2) from 10.255.255.14 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc1-spine2,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53965,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc1-spine2,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc1-spine2,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:53 dc1-spine2 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-leaf1a,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc2-leaf1a: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc2-leaf1a,VerifyRunningConfigDiffs,failure,"--- flash:/startup-config
++++ system:/running-config
+@@ -1,4 +1,4 @@
+-! device: dc2-leaf1a (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
++! device: dc1-leaf1a (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
+ !
+ no aaa root
+ !
+@@ -57,4 +57,11 @@
+ ntp server vrf MGMT 1.pool.ntp.org
+ ntp server vrf MGMT 2.pool.ntp.org
+ !
++router multicast
++   ipv4
++      software-forwarding kernel
++   !
++   ipv6
++      software-forwarding kernel
++!
+ end
+",Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-leaf1a,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-spine1 Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-spine1.avd.lab/Ethernet1 - Port: Ethernet2 Neighbor: dc2-spine2 Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-spine2.avd.lab/Ethernet1 - Port: Ethernet3 Neighbor: dc2-leaf1b Neighbor Port: Ethernet3 - Wrong LLDP neighbors: dc1-leaf1b.avd.lab/Ethernet3 - Port: Ethernet4 Neighbor: dc2-leaf1b Neighbor Port: Ethernet4 - Wrong LLDP neighbors: dc1-leaf1b.avd.lab/Ethernet4 - Port: Ethernet8 Neighbor: dc2-leaf1c Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-leaf1c.avd.lab/Ethernet1,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-leaf1a,VerifyReachability,failure,Destination 10.255.255.64 (dc2-spine1_Ethernet1) from 10.255.255.65 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.66 (dc2-spine2_Ethernet1) from 10.255.255.67 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc2-leaf1a,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53940,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-leaf1a,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-leaf1a,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:40 dc2-leaf1a NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-leaf1b,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc2-leaf1b: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc2-leaf1b,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-spine1 Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-spine1.avd.lab/Ethernet2 - Port: Ethernet2 Neighbor: dc2-spine2 Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-spine2.avd.lab/Ethernet2 - Port: Ethernet3 Neighbor: dc2-leaf1a Neighbor Port: Ethernet3 - Wrong LLDP neighbors: dc1-leaf1a.avd.lab/Ethernet3 - Port: Ethernet4 Neighbor: dc2-leaf1a Neighbor Port: Ethernet4 - Wrong LLDP neighbors: dc1-leaf1a.avd.lab/Ethernet4 - Port: Ethernet8 Neighbor: dc2-leaf1c Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-leaf1c.avd.lab/Ethernet2,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-leaf1b,VerifyReachability,failure,Destination 10.255.255.68 (dc2-spine1_Ethernet2) from 10.255.255.69 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.70 (dc2-spine2_Ethernet2) from 10.255.255.71 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc2-leaf1b,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53924,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-leaf1b,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-leaf1b,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:47 dc2-leaf1b NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-leaf1c,VerifyRunningConfigDiffs,failure,"--- flash:/startup-config
++++ system:/running-config
+@@ -1,4 +1,4 @@
+-! device: dc2-leaf1c (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
++! device: dc1-leaf1c (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
+ !
+ no aaa root
+ !
+@@ -51,4 +51,11 @@
+ ntp server vrf MGMT 1.pool.ntp.org
+ ntp server vrf MGMT 2.pool.ntp.org
+ !
++router multicast
++   ipv4
++      software-forwarding kernel
++   !
++   ipv6
++      software-forwarding kernel
++!
+ end
+",Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-leaf1c,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-leaf1a Neighbor Port: Ethernet8 - Wrong LLDP neighbors: dc1-leaf1a.avd.lab/Ethernet8 - Port: Ethernet2 Neighbor: dc2-leaf1b Neighbor Port: Ethernet8 - Wrong LLDP neighbors: dc1-leaf1b.avd.lab/Ethernet8,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-leaf1c,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53923,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-leaf1c,VerifyInterfacesStatus,failure,Interface: Port-Channel1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-leaf1c,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:45 dc2-leaf1c NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-leaf2a,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc2-leaf2a: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc2-leaf2a,VerifyRunningConfigDiffs,failure,"--- flash:/startup-config
++++ system:/running-config
+@@ -1,4 +1,4 @@
+-! device: dc2-leaf2a (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
++! device: dc1-leaf2a (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
+ !
+ no aaa root
+ !
+@@ -59,4 +59,11 @@
+ ntp server vrf MGMT 1.pool.ntp.org
+ ntp server vrf MGMT 2.pool.ntp.org
+ !
++router multicast
++   ipv4
++      software-forwarding kernel
++   !
++   ipv6
++      software-forwarding kernel
++!
+ end
+",Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-leaf2a,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-spine1 Neighbor Port: Ethernet3 - Wrong LLDP neighbors: dc1-spine1.avd.lab/Ethernet3 - Port: Ethernet2 Neighbor: dc2-spine2 Neighbor Port: Ethernet3 - Wrong LLDP neighbors: dc1-spine2.avd.lab/Ethernet3 - Port: Ethernet3 Neighbor: dc2-leaf2b Neighbor Port: Ethernet3 - Wrong LLDP neighbors: dc1-leaf2b.avd.lab/Ethernet3 - Port: Ethernet4 Neighbor: dc2-leaf2b Neighbor Port: Ethernet4 - Wrong LLDP neighbors: dc1-leaf2b.avd.lab/Ethernet4 - Port: Ethernet8 Neighbor: dc2-leaf2c Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-leaf2c.avd.lab/Ethernet1,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-leaf2a,VerifyReachability,failure,Destination 10.255.255.72 (dc2-spine1_Ethernet3) from 10.255.255.73 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.74 (dc2-spine2_Ethernet3) from 10.255.255.75 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 172.16.100.0 (dc1-leaf2a_Ethernet6) from 172.16.100.1 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc2-leaf2a,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53967,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-leaf2a,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-leaf2a,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:55 dc2-leaf2a NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-leaf2b,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc2-leaf2b: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc2-leaf2b,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-spine1 Neighbor Port: Ethernet4 - Wrong LLDP neighbors: dc1-spine1.avd.lab/Ethernet4 - Port: Ethernet2 Neighbor: dc2-spine2 Neighbor Port: Ethernet4 - Wrong LLDP neighbors: dc1-spine2.avd.lab/Ethernet4 - Port: Ethernet3 Neighbor: dc2-leaf2a Neighbor Port: Ethernet3 - Wrong LLDP neighbors: dc1-leaf2a.avd.lab/Ethernet3 - Port: Ethernet4 Neighbor: dc2-leaf2a Neighbor Port: Ethernet4 - Wrong LLDP neighbors: dc1-leaf2a.avd.lab/Ethernet4 - Port: Ethernet8 Neighbor: dc2-leaf2c Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-leaf2c.avd.lab/Ethernet2,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-leaf2b,VerifyReachability,failure,Destination 10.255.255.76 (dc2-spine1_Ethernet4) from 10.255.255.77 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.78 (dc2-spine2_Ethernet4) from 10.255.255.79 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 172.16.100.2 (dc1-leaf2b_Ethernet6) from 172.16.100.3 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc2-leaf2b,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53965,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-leaf2b,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured - Interface: Loopback1 - Not configured - Interface: Loopback10 - Not configured - Interface: Loopback11 - Not configured - Interface: Port-Channel3 - Not configured - Interface: Port-Channel5 - Not configured - Interface: Port-Channel8 - Not configured - Interface: Vlan11 - Not configured - Interface: Vlan12 - Not configured - Interface: Vlan21 - Not configured - Interface: Vlan22 - Not configured - Interface: Vlan3009 - Not configured - Interface: Vlan3010 - Not configured - Interface: Vlan4093 - Not configured - Interface: Vlan4094 - Not configured - Interface: Vxlan1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-leaf2b,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:27:53 dc2-leaf2b NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-leaf2c,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-leaf2a Neighbor Port: Ethernet8 - Wrong LLDP neighbors: dc1-leaf2a.avd.lab/Ethernet8 - Port: Ethernet2 Neighbor: dc2-leaf2b Neighbor Port: Ethernet8 - Wrong LLDP neighbors: dc1-leaf2b.avd.lab/Ethernet8,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-leaf2c,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53923,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-leaf2c,VerifyInterfacesStatus,failure,Interface: Port-Channel1 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-leaf2c,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:46 dc2-leaf2c NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-spine1,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc2-spine1: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc2-spine1,VerifyRunningConfigDiffs,failure,"--- flash:/startup-config
++++ system:/running-config
+@@ -1,4 +1,4 @@
+-! device: dc2-spine1 (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
++! device: dc1-spine1 (cEOSLab, EOS-4.35.1F-45295350.4351F.1 (engineering build))
+ !
+ no aaa root
+ !
+@@ -53,4 +53,11 @@
+ ntp server vrf MGMT 1.pool.ntp.org
+ ntp server vrf MGMT 2.pool.ntp.org
+ !
++router multicast
++   ipv4
++      software-forwarding kernel
++   !
++   ipv6
++      software-forwarding kernel
++!
+ end
+",Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-spine1,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-leaf1a Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-leaf1a.avd.lab/Ethernet1 - Port: Ethernet2 Neighbor: dc2-leaf1b Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-leaf1b.avd.lab/Ethernet1 - Port: Ethernet3 Neighbor: dc2-leaf2a Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-leaf2a.avd.lab/Ethernet1 - Port: Ethernet4 Neighbor: dc2-leaf2b Neighbor Port: Ethernet1 - Wrong LLDP neighbors: dc1-leaf2b.avd.lab/Ethernet1,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-spine1,VerifyReachability,failure,Destination 10.255.255.65 (dc2-leaf1a_Ethernet1) from 10.255.255.64 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.69 (dc2-leaf1b_Ethernet1) from 10.255.255.68 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.73 (dc2-leaf2a_Ethernet1) from 10.255.255.72 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.77 (dc2-leaf2b_Ethernet1) from 10.255.255.76 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc2-spine1,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53932,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-spine1,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-spine1,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:42 dc2-spine1 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc2-spine2,VerifyBGPPeerSession,failure,'show bgp neighbors vrf all' failed on dc2-spine2: BGP inactive,Verifies the session state of BGP peers.,BGP
+dc2-spine2,VerifyLLDPNeighbors,failure,Port: Ethernet1 Neighbor: dc2-leaf1a Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-leaf1a.avd.lab/Ethernet2 - Port: Ethernet2 Neighbor: dc2-leaf1b Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-leaf1b.avd.lab/Ethernet2 - Port: Ethernet3 Neighbor: dc2-leaf2a Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-leaf2a.avd.lab/Ethernet2 - Port: Ethernet4 Neighbor: dc2-leaf2b Neighbor Port: Ethernet2 - Wrong LLDP neighbors: dc1-leaf2b.avd.lab/Ethernet2,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc2-spine2,VerifyReachability,failure,Destination 10.255.255.67 (dc2-leaf1a_Ethernet2) from 10.255.255.66 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.71 (dc2-leaf1b_Ethernet2) from 10.255.255.70 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.75 (dc2-leaf2a_Ethernet2) from 10.255.255.74 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address' - Destination 10.255.255.79 (dc2-leaf2b_Ethernet2) from 10.255.255.78 in VRF default - Error when executing ping: 'ping: bind: Cannot assign requested address',Verifies point-to-point reachability between Ethernet interfaces.,Connectivity
+dc2-spine2,VerifyInterfaceDiscards,failure,Interface: Management1 - Non-zero discard counter(s): inDiscards: 53924,Verifies that the interfaces packet discard counters are equal to zero.,Interfaces
+dc2-spine2,VerifyInterfacesStatus,failure,Interface: Loopback0 - Not configured,Verifies the operational states of specified interfaces to ensure they match expected configurations.,Interfaces
+dc2-spine2,VerifyLoggingErrors,failure,"Device has reported syslog messages with a severity of ERRORS or higher:
+Jul 15 12:28:46 dc2-spine2 NorCalInit: %HARDWARE-0-SYSTEM_IDENTIFICATION_FAILED: Failed to identify this system
+
+",Verifies there are no syslog messages with a severity of ERRORS or higher.,Logging
+dc1-leaf1a,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc1-leaf1a,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc1-leaf1a,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc1-leaf1a,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc1-leaf1b,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc1-leaf1b,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc1-leaf1b,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc1-leaf1b,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc1-leaf2a,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc1-leaf2a,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc1-leaf2a,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc1-leaf2a,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc1-leaf2b,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc1-leaf2b,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc1-leaf2b,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc1-leaf2b,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc2-leaf1a,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc2-leaf1a,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc2-leaf1a,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc2-leaf1a,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc2-leaf1b,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc2-leaf1b,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc2-leaf1b,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc2-leaf1b,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc2-leaf2a,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc2-leaf2a,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc2-leaf2a,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc2-leaf2a,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc2-leaf2b,VerifyMlagConfigSanity,skipped,MLAG is disabled,Verifies there are no MLAG config-sanity inconsistencies.,MLAG
+dc2-leaf2b,VerifyMlagInterfaces,skipped,MLAG is disabled,Verifies there are no inactive or active-partial MLAG ports.,MLAG
+dc2-leaf2b,VerifyMlagStatus,skipped,MLAG is disabled,Verifies the health status of the MLAG configuration.,MLAG
+dc2-leaf2b,VerifyVxlanConfigSanity,skipped,VXLAN is not configured,Verifies there are no VXLAN config-sanity inconsistencies.,VXLAN
+dc1-leaf1a,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-leaf1a,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-leaf1a,VerifyLLDPNeighbors,success,,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-leaf1a,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc1-leaf1a,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-leaf1a,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-leaf1a,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-leaf1a,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-leaf1a,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-leaf1a,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-leaf1a,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-leaf1a,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-leaf1a,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-leaf1a,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-leaf1a,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-leaf1a,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-leaf1b,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-leaf1b,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-leaf1b,VerifyLLDPNeighbors,success,,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-leaf1b,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc1-leaf1b,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-leaf1b,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-leaf1b,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-leaf1b,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-leaf1b,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-leaf1b,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-leaf1b,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-leaf1b,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-leaf1b,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-leaf1b,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-leaf1b,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-leaf1b,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-leaf1c,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-leaf1c,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-leaf1c,VerifyLLDPNeighbors,success,,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-leaf1c,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc1-leaf1c,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-leaf1c,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-leaf1c,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-leaf1c,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-leaf1c,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-leaf1c,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-leaf1c,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-leaf1c,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-leaf1c,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-leaf1c,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-leaf1c,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-leaf1c,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-leaf2a,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-leaf2a,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-leaf2a,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc1-leaf2a,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-leaf2a,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-leaf2a,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-leaf2a,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-leaf2a,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-leaf2a,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-leaf2a,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-leaf2a,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-leaf2a,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-leaf2a,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-leaf2a,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-leaf2a,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-leaf2b,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-leaf2b,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-leaf2b,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc1-leaf2b,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-leaf2b,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-leaf2b,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-leaf2b,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-leaf2b,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-leaf2b,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-leaf2b,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-leaf2b,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-leaf2b,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-leaf2b,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-leaf2b,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-leaf2b,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-leaf2c,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-leaf2c,VerifyLLDPNeighbors,success,,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-leaf2c,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc1-leaf2c,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-leaf2c,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-leaf2c,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-leaf2c,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-leaf2c,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-leaf2c,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-leaf2c,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-leaf2c,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-leaf2c,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-leaf2c,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-leaf2c,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-leaf2c,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-spine1,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-spine1,VerifyLLDPNeighbors,success,,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-spine1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-spine1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-spine1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-spine1,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-spine1,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-spine1,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-spine1,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-spine1,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-spine1,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-spine1,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-spine1,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-spine1,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-spine2,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc1-spine2,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc1-spine2,VerifyLLDPNeighbors,success,,Verifies the connection status of the specified LLDP (Link Layer Discovery Protocol) neighbors.,Connectivity
+dc1-spine2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc1-spine2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc1-spine2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc1-spine2,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc1-spine2,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc1-spine2,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc1-spine2,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc1-spine2,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc1-spine2,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc1-spine2,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc1-spine2,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc1-spine2,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-leaf1a,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-leaf1a,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc2-leaf1a,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-leaf1a,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-leaf1a,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-leaf1a,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-leaf1a,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-leaf1a,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-leaf1a,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-leaf1a,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-leaf1a,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-leaf1a,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-leaf1a,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-leaf1a,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-leaf1b,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-leaf1b,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-leaf1b,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc2-leaf1b,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-leaf1b,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-leaf1b,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-leaf1b,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-leaf1b,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-leaf1b,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-leaf1b,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-leaf1b,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-leaf1b,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-leaf1b,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-leaf1b,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-leaf1b,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-leaf1c,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-leaf1c,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc2-leaf1c,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-leaf1c,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-leaf1c,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-leaf1c,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-leaf1c,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-leaf1c,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-leaf1c,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-leaf1c,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-leaf1c,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-leaf1c,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-leaf1c,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-leaf1c,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-leaf2a,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-leaf2a,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc2-leaf2a,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-leaf2a,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-leaf2a,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-leaf2a,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-leaf2a,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-leaf2a,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-leaf2a,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-leaf2a,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-leaf2a,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-leaf2a,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-leaf2a,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-leaf2a,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-leaf2b,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-leaf2b,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-leaf2b,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc2-leaf2b,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-leaf2b,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-leaf2b,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-leaf2b,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-leaf2b,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-leaf2b,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-leaf2b,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-leaf2b,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-leaf2b,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-leaf2b,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-leaf2b,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-leaf2b,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-leaf2c,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-leaf2c,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-leaf2c,VerifyIllegalLACP,success,,Verifies there are no illegal LACP packets in port channels.,Interfaces
+dc2-leaf2c,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-leaf2c,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-leaf2c,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-leaf2c,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-leaf2c,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-leaf2c,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-leaf2c,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-leaf2c,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-leaf2c,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-leaf2c,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-leaf2c,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-leaf2c,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-spine1,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-spine1,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-spine1,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-spine1,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-spine1,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-spine1,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-spine1,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-spine1,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-spine1,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-spine1,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-spine1,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-spine1,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-spine1,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc2-spine2,VerifyRunningConfigDiffs,success,,Verifies there is no difference between the running-config and the startup-config.,Configuration
+dc2-spine2,VerifyZeroTouch,success,,Verifies ZeroTouch is disabled.,Configuration
+dc2-spine2,VerifyInterfaceErrDisabled,success,,Verifies there are no interfaces in the errdisabled state.,Interfaces
+dc2-spine2,VerifyInterfaceErrors,success,,Verifies that the interfaces error counters are equal to zero.,Interfaces
+dc2-spine2,VerifyInterfaceUtilization,success,,Verifies that the utilization of interfaces is below a certain threshold.,Interfaces
+dc2-spine2,VerifyRoutingProtocolModel,success,,Verifies the configured routing protocol model.,Routing
+dc2-spine2,VerifySTPCounters,success,,Verifies there is no errors in STP BPDU packets.,STP
+dc2-spine2,VerifyAgentLogs,success,,Verifies there are no agent crash reports.,System
+dc2-spine2,VerifyCoredump,success,,Verifies there are no core dump files.,System
+dc2-spine2,VerifyFileSystemUtilization,success,,Verifies that no partition is utilizing more than 75% of its disk space.,System
+dc2-spine2,VerifyMaintenance,success,,Verifies that the device is not currently under or entering maintenance.,System
+dc2-spine2,VerifyMemoryUtilization,success,,Verifies whether the memory utilization is below 75%.,System
+dc2-spine2,VerifyNTP,success,,Verifies if NTP is synchronised.,System
+dc2-spine2,VerifyReloadCause,success,,Verifies the last reload cause of the device.,System
+dc1-leaf1a,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc1-leaf1b,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc1-leaf1c,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc1-leaf2a,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc1-leaf2b,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc1-leaf2c,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc2-leaf1a,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc2-leaf1b,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc2-leaf1c,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc2-leaf2a,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc2-leaf2b,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces
+dc2-leaf2c,VerifyPortChannels,unset,,Verifies there are no inactive ports in port channels.,Interfaces

@@ -10,48 +10,80 @@ all:
               hosts:
                 dc1-spine1:
                   ansible_host: 172.16.1.11
+                  ansible_user: arista
+                  ansible_password: arista
                 dc1-spine2:
                   ansible_host: 172.16.1.12
+                  ansible_user: arista
+                  ansible_password: arista
             DC1_L3_LEAFS:
               hosts:
                 dc1-leaf1a:
                   ansible_host: 172.16.1.101
+                  ansible_user: arista
+                  ansible_password: arista
                 dc1-leaf1b:
                   ansible_host: 172.16.1.102
+                  ansible_user: arista
+                  ansible_password: arista
                 dc1-leaf2a:
                   ansible_host: 172.16.1.103
+                  ansible_user: arista
+                  ansible_password: arista
                 dc1-leaf2b:
                   ansible_host: 172.16.1.104
+                  ansible_user: arista
+                  ansible_password: arista
             DC1_L2_LEAFS:
               hosts:
                 dc1-leaf1c:
                   ansible_host: 172.16.1.151
+                  ansible_user: arista
+                  ansible_password: arista
                 dc1-leaf2c:
                   ansible_host: 172.16.1.152
+                  ansible_user: arista
+                  ansible_password: arista
         DC2:
           children:
             DC2_SPINES:
               hosts:
                 dc2-spine1:
                   ansible_host: 172.16.1.21
+                  ansible_user: arista
+                  ansible_password: arista
                 dc2-spine2:
                   ansible_host: 172.16.1.22
+                  ansible_user: arista
+                  ansible_password: arista
             DC2_L3_LEAFS:
               hosts:
                 dc2-leaf1a:
                   ansible_host: 172.16.1.111
+                  ansible_user: arista
+                  ansible_password: arista
                 dc2-leaf1b:
                   ansible_host: 172.16.1.112
+                  ansible_user: arista
+                  ansible_password: arista
                 dc2-leaf2a:
                   ansible_host: 172.16.1.113
+                  ansible_user: arista
+                  ansible_password: arista
                 dc2-leaf2b:
                   ansible_host: 172.16.1.114
+                  ansible_user: arista
+                  ansible_password: arista
             DC2_L2_LEAFS:
               hosts:
                 dc2-leaf1c:
                   ansible_host: 172.16.1.161
+                  ansible_user: arista
+                  ansible_password: arista
                 dc2-leaf2c:
                   ansible_host: 172.16.1.162
+                  ansible_user: arista
+                  ansible_password: arista
 
     NETWORK_SERVICES:
       children:
